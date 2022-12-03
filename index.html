@@ -1,9 +1,83 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MyPortfolio</title>
+</head>
+<header>
+    <h1>MyPortfolio</h1>
+    <ul class = 'navigation'>
+        <img id="profilepicture" src=".\ressources\Profilbild_2.jpg" alt="Profilbild">
+        <a href="#html"><li>Html</li></a>
+        <a href="#CSS"><li>CSS</li></a>
+        <li href="#">JavaScript</li>
+        <a href="C:\Users\jakos\Desktop\JavaScript_Lernen\Html_CSS_JS_Projekte\WebSite Design System\index.html" target="_blank"><li>WebSite Design</li></a>
+    </ul>
+</header>
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Html</a></li>
+</ul>
+
 <body>
-  <h1>Jakob</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <br>
+    <h2>MyPortfolio</h2>
+    <div>
+        <p>
+            Hier im <strong>MyPortfolio</strong> möchte ich lediglich zeigen, was ich bisher alles gelernt habe und werde das auch stetig erweitern.
+            Es wird zu beginn keine besondere Struktur geben, sondern nur eine aneinaderreihung der Dinge die ich gelernt habe.
+            <br>
+            So hat z.B. dieses Feld keinen weiteren Zweck, als dass es so aussieht, dass man darin etwas ein tippen kann.
+            <input type="text">
+            <br>
+            Ähnlich verhält es sich mit diesen Knöpfen hier. Diese sind einfach nur dazu da zu zeigen wie unterschiedlich diese aussehen können.
+            <br><button id = 'firstbutton'>Ein Knopf</button>
+            <button id = 'secondbutton'>Zwei Knopf</button>
+        </p>
+    </div>
+
+      <!--Table-->
+
+      <h3>HTML Tabellen</h3>
+      <p class = 'explanation'>
+          <a href="https://www.codecademy.com/practice/tracks/fecp-22-fundamentals-of-html/modules/wdcp-22-learn-html-tables" style="color:aqua" target="_blank">
+              Hier
+          </a>
+            wird einem gezeigt wie man z.B. folgende Tabellen erstellt:
+          <table>
+              <tbody>
+                 <tr>
+                  <thead>
+                  <th>Reihe 1 / Spalte 1</th>
+                  <th>Spalte 2</th>
+                  <th>Spalte 3</th>
+                  <th>Spalte 4</th>
+                  </thead>
+                 </tr>
+                 <tr>
+                  <th>Reihe 2 / Spalte 1</th>
+                  <td id = button>Definitv kein Knopf</td>
+                  <td rowspan="2">Doppelte Spalte / Doppelt so groß</td>
+                  <td>durch Spalte 3 verschoben</td>
+                 </tr>
+                 <tr>
+                  <th>Reihe 3 / Spalte 1</th>
+                  <td>Normal</td>
+                  <td>Normal</td>
+                  <td>Normal</td>
+                 </tr>
+                 <tr>
+                  <th>Reihe 4 / Spalte 1</th>
+                  <td colspan = '2'>Doppelte Reihe</td>
+                  <td>Normal</td>
+                  <td>Normal</td>
+                 </tr>
+              </tbody>
+          </table>
+      </p>
 </body>
- 
 </html>
